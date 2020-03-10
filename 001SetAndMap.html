@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // Set数据结构：类似于数组，成员唯一，可以用来做数组去重
+    // Set是一个构造函数
+    const s = new Set([1, 2, 3, 3])
+    console.log(s); // {1,2,3}
+    s.add(4) //增
+    s.delete(3) //删
+    s.has(2) //是否存在某个值
+    s.size //大小
+    s.clear() //清空
+
+    // 数组去重
+    ;[...new Set(Array)];
+    // 字符串去重
+    [...new Set(String)].join('')
+    // 转化数组方法Array.from():可以将传入的数据转化为数组
+    // 数组去重方法2
+    Array.from(new Set(array))
+
+    // Map数据结构：类似于对象。是键值对的集合，键不仅仅可以是字符串，包括各种类型的值
+    
+  </script>
+</body>
+
+</html>

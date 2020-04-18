@@ -15,7 +15,14 @@
    - 该方法返回一个Iterator遍历器对象，该对象包含了数组中每一项的键值对，键为下标索引，值为数组中值
    - 可以通过 for...of 遍历
    ```
+   // 数组
    for(let [key,value] of arr.entries()){
       console.log(`${key}----${value}`)
    }
+   
+   // 对象
+   for(let [key,value] of Object.entries(obj)){
+      console.log(`${key}----${value}`)
+   }
+
    ```

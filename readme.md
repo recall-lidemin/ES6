@@ -4,6 +4,8 @@
   ## promise(构造函数)
    - 创建promise容器
    - 一旦创建就立即开始执行里面的代码
+   - 返回是一个Promise
+   - Promise在resolve或者reject后，后面的操作应该放到then里面进行，所以在resolve或reject时，前面加上return更为合适
   
   ## async await
    - async 是Generator函数的语法糖，是对该方法的改进版，使用async修饰的函数，是一个异步函数，该函数返回promise，
@@ -26,3 +28,8 @@
    }
 
    ```
+   
+   ## set和WeakSet
+    - set集合，强引用，垃圾回收不会释放被他引用的数据
+    - WeakSet，弱引用，垃圾回收机制不会考虑数据被他的引用
+    
